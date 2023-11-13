@@ -1,6 +1,6 @@
 import Working from "../images/man-working-at-computer-vector-3789594-removebg-preview.png";
 import Clock from "../images/Alarm_Clock_Animation_High_Res.png";
-
+import "../styles/Undercons.css";
 export default function UnderCons() {
   return (
     <>
