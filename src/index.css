@@ -71,3 +71,6 @@ button:focus-visible {
   margin: 0;
   padding: 0;
 }
+.maindiv{
+  background-color: rgb(38, 38, 38);
+}

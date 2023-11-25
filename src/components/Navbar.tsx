@@ -15,8 +15,15 @@ export default function Navbar() {
   return (
     <>
       <div className="navbar">
-        <div className="navleft">Simarjot Singh</div>
-        <RiMenu4Fill size={35} onClick={onclicked}></RiMenu4Fill>
+        <div className="navleft">
+          <p className="name-navbar">Simarjot Singh</p>
+        </div>
+        <RiMenu4Fill
+          size={35}
+          onClick={onclicked}
+          className="openbtn"
+          color="white"
+        ></RiMenu4Fill>
         <div className={"navright" + " " + `${visiblity ? "open" : ""}`}>
           <AiOutlineCloseCircle
             color="white"
