@@ -1,13 +1,13 @@
-import { useState } from "react";
-
+import { Route, Router, HashRouter } from "react-router-dom";
 import UnderCons from "./components/UnderCons";
+import Navbar from "./components/Navbar";
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="Appmain">
-      <UnderCons />
-    </div>
+    <>
+      <HashRouter>
+        <Navbar></Navbar>
+      </HashRouter>
+    </>
   );
 }
 
