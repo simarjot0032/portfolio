@@ -6,7 +6,6 @@ function App() {
     <>
       <HashRouter>
         <Navbar></Navbar>
-        {/* <div style={{ height: "100vh", backgroundColor: "black" }}></div> */}
       </HashRouter>
     </>
   );
