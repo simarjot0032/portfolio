@@ -31,22 +31,22 @@ export default function Navbar() {
             className="closebtn"
             onClick={onclosed}
           ></AiOutlineCloseCircle>
-          <Link to="" className="link">
+          <Link to="#Home" className="link">
             <li className="link-navbar" onClick={onclosed}>
               Home
             </li>
           </Link>
-          <Link to="About" className="link">
+          <Link to="#About" className="link">
             <li className="link-navbar" onClick={onclosed}>
               About
             </li>
           </Link>
-          <Link to="Project" className="link">
+          <Link to="#Project" className="link">
             <li className="link-navbar" onClick={onclosed}>
               Project
             </li>
           </Link>
-          <Link to="Contact" className="link">
+          <Link to="#Contact" className="link">
             <li className="link-navbar" onClick={onclosed}>
               Contact
             </li>
