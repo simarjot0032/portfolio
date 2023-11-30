@@ -7,6 +7,7 @@
   justify-content: space-between;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 .name-navbar {
   margin: 0;
@@ -98,5 +99,12 @@
   }
   .link-navbar {
     font-size: 1.5rem;
+  }
+  .name-navbar {
+    transition: all 0.3s linear;
+  }
+  .name-navbar:hover {
+    transform: scale(1.1);
+    transition: all 0.3s linear;
   }
 }
