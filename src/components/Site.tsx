@@ -14,7 +14,7 @@ export default function Site() {
           </div>
           {/* <div className="line"></div> */}
           <div className="self-container">
-            <div className="self-name">Simarjot Singh</div>
+            {/* <div className="self-name">Simarjot Singh</div>
             <div className="web-dev">Web Developer</div>
             <div className="social-links">
               <div className="githubLink">
@@ -33,7 +33,10 @@ export default function Site() {
                   <CiLinkedin className="linkedIn-icon" size={50} />
                 </a>
               </div>
-            </div>
+            </div> */}
+            <div className="self-container-line">HI I AM</div>
+            <div className="self-container-secondline">Simarjot Singh</div>
+            <div className="self-container-lastline">Web Developer</div>
           </div>
         </div>
       </div>

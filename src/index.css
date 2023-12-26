@@ -67,10 +67,17 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
-*{
+:root {
+  --primarycolor: rgb(17, 191, 191);
+  --secondarycolor: rgb(21, 255, 255);
+  --selffont: "Open Sans", sans-serif;
+  --otherfont: "Work Sans", sans-serif;
+  --anotherfont: "Work Sans", sans-serif;
+}
+* {
   margin: 0;
   padding: 0;
 }
-.maindiv{
+.maindiv {
   background-color: rgb(38, 38, 38);
 }
