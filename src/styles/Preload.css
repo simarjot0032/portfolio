@@ -57,8 +57,8 @@
     height: 4px;
     width: 0;
     animation: slider 1 ease 1s;
-    animation-delay: 1s;
-    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
   }
   @keyframes slider {

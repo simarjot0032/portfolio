@@ -15,10 +15,10 @@ body {
 }
 
 .image-div {
-  margin-top: 2rem;
   display: flex;
   justify-content: center;
   position: relative;
+  align-items: center;
 }
 .image {
   border-radius: 100%;
@@ -67,9 +67,8 @@ body {
 .self-container-lastline {
   font-size: 2.8rem;
   font-family: var(--selffont);
-  color: transparent;
   font-weight: 500;
-  -webkit-text-stroke: 1px var(--secondarycolor);
+  color: var(--acentcolor);
 }
 .self-container-secondline,
 .self-container-lastline {
@@ -77,7 +76,50 @@ body {
   letter-spacing: 2px;
 }
 .self-container-lastline {
+  color: transparent;
+
   letter-spacing: 1px;
+  -webkit-text-stroke: 1px var(--secondarycolor);
+}
+.hireme-resume {
+  display: flex;
+  padding-top: 1rem;
+  gap: 1rem;
+}
+.hireme,
+.resume {
+  padding: 1rem 2.2rem;
+  border-radius: 20px;
+  display: flex;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 800;
+  align-items: center;
+}
+.hireme {
+  background-color: rgb(5, 171, 171);
+  border: 0;
+  transition: all 0.2s linear;
+}
+
+.hireme:hover {
+  box-shadow: 0 0 50px 15px rgba(7, 220, 220, 0.552);
+  border: 2px solid rgb(5, 171, 171);
+}
+.resume {
+  background-color: transparent;
+  border: 2px solid rgb(5, 171, 171);
+  transition: all 0.2s linear;
+}
+.resume:hover {
+  background-color: rgb(5, 171, 171);
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  box-shadow: 0 0 50px 15px rgba(7, 220, 220, 0.552);
+}
+.linktoresume {
+  text-decoration: none;
 }
 @media screen and (min-width: 700px) and (max-width: 1023px) {
   .home {
@@ -117,7 +159,7 @@ body {
   .self-container-line,
   .self-container-secondline,
   .self-container-lastline {
-    font-size: 3.5rem;
+    font-size: 3.8rem;
   }
   .self-container {
     padding: 0;
