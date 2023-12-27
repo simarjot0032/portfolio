@@ -3,6 +3,7 @@ import "../styles/Navbar.css";
 import { RiMenu4Fill } from "react-icons/ri";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useState } from "react";
+import image from "../images/fotor-ai-20231228474-removebg-preview.png";
 export default function Navbar() {
   const [visiblity, setvisiblity] = useState(false);
   function onclicked() {
@@ -16,6 +17,7 @@ export default function Navbar() {
     <>
       <div className="navbar">
         <div className="navleft">
+          <img src={image} alt="" className="navbarimage" />
           <p className="name-navbar">Simarjot Singh</p>
         </div>
         <RiMenu4Fill
