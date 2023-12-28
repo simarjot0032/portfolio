@@ -79,6 +79,18 @@ button:focus-visible {
   margin: 0;
   padding: 0;
 }
+body::-webkit-scrollbar {
+  background-color: black;
+  width: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: teal;
+
+  border-radius: 50px;
+}
+body {
+  scroll-behavior: smooth;
+}
 .maindiv {
   background-color: rgb(38, 38, 38);
 }
