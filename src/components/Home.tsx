@@ -43,10 +43,12 @@ export default function Site() {
               <div className="self-container-lastline">Web Developer</div>
             </div>
             <div className="hireme-resume">
-              <button className="hireme">
-                Hire Me!{" "}
-                <FaArrowRight color="white" style={{ marginLeft: "5px" }} />
-              </button>
+              <a href="mailto:devsimarjs@gmail.com" className="linktohireme">
+                <button className="hireme">
+                  Hire Me!{" "}
+                  <FaArrowRight color="white" style={{ marginLeft: "5px" }} />
+                </button>
+              </a>
               <a href={resume} className="linktoresume" download={true}>
                 <button className="resume">
                   Resume{" "}
