@@ -6,14 +6,16 @@ import Preload from "./components/Preload";
 import { useState } from "react";
 function App() {
   const [showpreload, setpreload] = useState(true);
+  const [showhome, sethome] = useState(false);
   setTimeout(() => {
     setpreload(false);
+    sethome(true);
   }, 2950);
   return (
     <>
       <HashRouter>
-        {/* {showpreload && <Preload></Preload>} */}
-        <Home />
+        {showpreload && <Preload></Preload>}
+        {showhome && <Home />}
       </HashRouter>
     </>
   );

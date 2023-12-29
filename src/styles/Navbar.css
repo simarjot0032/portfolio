@@ -8,8 +8,10 @@
   position: sticky;
   top: 0;
   z-index: 1;
+  user-select: none;
   background-color: rgba(0, 0, 0, 0.824);
   backdrop-filter: blur(5px);
+  padding-bottom: 0;
 }
 .navleft {
   display: flex;
@@ -69,7 +71,7 @@
   list-style: none;
 
   font-family: monospace;
-
+  user-select: none;
   position: relative;
   font-weight: 700;
 }
@@ -98,7 +100,8 @@
   .navbar {
     justify-content: space-around;
     position: sticky;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
+    padding: 1.2rem;
     background-color: rgba(0, 0, 0, 0.29);
   }
   .navright {
@@ -108,6 +111,8 @@
     align-items: start;
     justify-content: start;
     background-color: transparent;
+    /* background-color: rgba(0, 0, 0, 0.027); */
+    backdrop-filter: none;
     width: fit-content;
     height: fit-content;
   }
