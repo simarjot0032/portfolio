@@ -143,7 +143,7 @@ body {
   align-items: center;
 }
 .intro-container {
-  margin-top: 2rem;
+  margin-top: 5rem;
   width: 95%;
   max-width: 500px;
   min-height: 500px;
@@ -212,6 +212,8 @@ body {
 }
 .lets-connect-content {
   font-family: var(--otherfont);
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 .label {
   font-size: 1.2rem;
@@ -222,39 +224,51 @@ body {
   display: flex;
   gap: 0.5rem;
   font-size: 1.2rem;
-  align-items: center;
+  flex-direction: column;
+  margin: 1rem 0;
 }
 .name,
 .email {
-  border: 0;
+  border: 2px solid teal;
   background-color: transparent;
-  padding: 0.8rem 0;
-  border-bottom: 1px solid teal;
+  padding: 0.8rem;
+  border-bottom: 2px solid teal;
   color: white;
+  font-size: 1rem;
   outline: none;
   width: 100%;
+  border-radius: 20px;
 }
-.name:active,
-.email:active {
-  border: none;
-  outline: none;
-  border-bottom: 2px solid teal;
+.name::placeholder,
+.email::placeholder {
+  color: rgba(255, 255, 255, 0.843);
 }
+
 .connect {
   margin-top: 1rem;
   padding: 1rem 5rem;
   border-radius: 20px;
-  background-color: teal;
+  /* background-color: teal; */
+  background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
   color: white;
   font-size: 1.2rem;
   border: 0;
+  /* box-shadow: 0 0 50px 2px teal; */
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.5s linear;
+}
+.connect:hover {
+  box-shadow: teal 0px 0px 10px 5px;
 }
 .btn {
   display: flex;
-  justify-content: center;
+  width: 100%;
+  /* justify-content: ; */
 }
 .thanks {
   font-size: 1.5rem;
+  font-family: var(--otherfont);
   margin: 1rem 0 0 0;
 }
 @keyframes emojiwave {
@@ -282,13 +296,15 @@ body {
   }
   .container-image-self {
     display: flex;
+    align-items: center;
+    gap: 2.5rem;
   }
   .linktodown {
     margin-top: 2rem;
   }
   .btn {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
   }
 }
 
@@ -310,6 +326,8 @@ body {
   }
   .container-image-self {
     display: flex;
+    gap: 5rem;
+    align-items: center;
   }
   .linktodown {
     margin-top: 2rem;
@@ -320,7 +338,7 @@ body {
   }
   .btn {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
   }
 }
 
@@ -355,6 +373,6 @@ body {
   }
   .btn {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
   }
 }

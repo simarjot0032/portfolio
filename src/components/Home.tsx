@@ -13,10 +13,6 @@ import { useForm, ValidationError } from "@formspree/react";
 import Form from "../components/Form";
 
 export default function Site() {
-  const [state, handleSubmit] = useForm("xwkgkeyn");
-  if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
-  }
   return (
     <>
       <div className="main-container">
@@ -26,7 +22,6 @@ export default function Site() {
             <div className="image-div">
               <img src={Image} alt="" className="image" />
             </div>
-            {/* <div className="line"></div> */}
 
             <div className="self-main-container">
               {/* <div className="self-name">Simarjot Singh</div>
