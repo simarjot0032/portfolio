@@ -53,6 +53,7 @@
   flex-direction: column;
   position: absolute;
   z-index: 1;
+  /* backdrop-filter: blur(4px); */
 }
 .closebtn {
   position: absolute;

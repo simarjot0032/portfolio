@@ -13,7 +13,13 @@ body {
   background-color: rgb(0, 0, 0);
   min-height: 100vh;
 }
-
+.home {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  padding-top: 0.2rem;
+  gap: 2rem;
+}
 .image-div {
   display: flex;
   justify-content: center;
@@ -27,12 +33,7 @@ body {
   height: 300px;
   max-width: 300px;
 }
-.home {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  gap: 2rem;
-}
+
 .self-name,
 .web-dev {
   line-height: 2.5rem;
@@ -65,6 +66,11 @@ body {
 .instagram-icon:hover {
   opacity: 1;
   color: #f09433;
+}
+.self-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .self-container {
   padding: 1rem;
@@ -132,15 +138,21 @@ body {
 }
 .linktodown {
   margin: auto auto;
-  margin-top: 0.2rem;
+
+  padding-bottom: 0.2rem;
   animation: spread infinite ease-in-out 1s alternate;
   border-radius: 100%;
-  /* position: relative; */
   user-select: none;
   background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.linktodownbtn {
+  filter: drop-shadow(0px 15px 2px rgb(0, 128, 128));
+  border-radius: 100%;
+
+  /* animation: spread infinite ease-in-out 1s alternate; */
 }
 .intro-container {
   margin-top: 5rem;
@@ -161,11 +173,13 @@ body {
 .intro-container-header-content {
   font-family: var(--otherfont);
   background-color: rgb(67, 123, 123);
-  width: 100px;
+  width: fit-content;
   font-weight: 500;
-  height: 25px;
+  height: fit-content;
+  padding: 0.5rem;
   border-radius: 20px;
   display: flex;
+  font-size: 1.2rem;
   justify-content: center;
   align-items: center;
 }
@@ -281,10 +295,12 @@ body {
 }
 @keyframes spread {
   0% {
-    box-shadow: 0 0 50px 10px teal;
+    /* box-shadow: 0 0 50px 10px teal; */
+    filter: drop-shadow(0px -28px 2px teal);
   }
   100% {
-    box-shadow: 0 0 50px 25px teal;
+    /* box-shadow: 0 0 50px 25px teal; */
+    filter: drop-shadow(0px 50px 2px teal);
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1023px) {
@@ -313,7 +329,14 @@ body {
     padding: 2rem;
     align-items: center;
     justify-content: center;
+    padding-top: 0rem;
+
     flex-direction: column;
+  }
+  .image,
+  .image-div {
+    max-width: 500px;
+    height: 500px;
   }
   .self-container-line,
   .self-container-secondline,
@@ -326,7 +349,7 @@ body {
   }
   .container-image-self {
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
     align-items: center;
   }
   .linktodown {
@@ -345,10 +368,16 @@ body {
 @media screen and (min-width: 1301px) {
   .home {
     padding: 2rem;
+    padding-top: 0rem;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+    /* gap: rem; */
     flex-direction: column;
+  }
+  .image,
+  .image-div {
+    max-width: 500px;
+    height: 500px;
   }
   .self-container-line,
   .self-container-secondline,
@@ -359,17 +388,29 @@ body {
     padding: 0;
   }
   .container-image-self {
-    margin-top: 2rem;
-    /* margin-left: 1rem; */
+    margin-top: 0rem;
     display: flex;
+    align-items: center;
+
     gap: 2.5rem;
   }
   .linktodown {
-    margin-top: 5rem;
+    margin-top: 2.5rem;
+  }
+  #aboutme {
+    margin-top: 8rem;
   }
   .intro-container,
   .lets-connect {
     max-width: 680px;
+  }
+  .intro-container-content {
+    /* display: flex;
+    flex-direction: row-reverse;
+    align-items: center; */
+  }
+  .lets-connect {
+    margin-top: 5rem;
   }
   .btn {
     display: flex;

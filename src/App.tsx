@@ -1,6 +1,6 @@
 import { Route, Router, HashRouter } from "react-router-dom";
 import UnderCons from "./components/UnderCons";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Preload from "./components/Preload";
 import { useState } from "react";

@@ -1,9 +1,10 @@
 import "../styles/Home.css";
 import Navbar from "./Navbar";
 import Image from "../images/fotor-ai-20231228474-removebg-preview.png";
-import resume from "../assets/Simarjot's Resume (5).pdf";
+import resume from "../assets/Simarjot's Resume (8).pdf";
 import introimage from "../images/1701812591483 (1).jpg";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-scroll";
 import { FaDownload } from "react-icons/fa";
 import { HiChevronDown } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
@@ -73,10 +74,17 @@ export default function Site() {
               </div>
             </div>
           </div>
-          <a href="#intro-container" className="linktodown">
-            <HiChevronDown color="teal" size={58} />
-          </a>
-          <div className="intro-container" id="intro-container">
+          <Link
+            to="aboutme"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            href="#aboutme"
+            className="linktodown"
+          >
+            <HiChevronDown color="teal" size={60} className="linktodownbtn" />
+          </Link>
+          <div className="intro-container" id="aboutme">
             <div className="intro-container-header">
               <div className="intro-container-header-content">About Me!</div>
             </div>
