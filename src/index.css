@@ -89,9 +89,7 @@ body::-webkit-scrollbar-thumb {
 
   border-radius: 50px;
 }
-body {
-  scroll-behavior: smooth;
-}
+
 .maindiv {
   background-color: rgb(38, 38, 38);
 }
