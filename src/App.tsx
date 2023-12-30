@@ -10,7 +10,7 @@ function App() {
   setTimeout(() => {
     setpreload(false);
     sethome(true);
-  }, 2950);
+  }, 2850);
   return (
     <>
       <HashRouter>

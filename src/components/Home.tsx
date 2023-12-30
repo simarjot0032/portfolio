@@ -12,6 +12,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 import { useForm, ValidationError } from "@formspree/react";
 import Form from "../components/Form";
+import Footer from "./Footer";
 
 export default function Site() {
   return (
@@ -237,6 +238,9 @@ export default function Site() {
               <Form></Form>
             </div>
           </div>
+        </div>
+        <div className="footer-section">
+          <Footer />
         </div>
       </div>
     </>
