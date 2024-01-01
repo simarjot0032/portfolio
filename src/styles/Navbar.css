@@ -5,13 +5,15 @@
   padding: 1.5rem;
   align-items: center;
   justify-content: space-between;
+
   position: sticky;
+
   top: 0;
   z-index: 1;
   user-select: none;
   background-color: rgba(0, 0, 0, 0.824);
   backdrop-filter: blur(5px);
-  padding-bottom: 0;
+  padding-bottom: 0.5rem;
 }
 .navleft {
   display: flex;

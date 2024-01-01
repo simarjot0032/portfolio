@@ -1,5 +1,5 @@
 import "../styles/Home.css";
-import Navbar from "./Navbar";
+
 import Image from "../images/fotor-ai-20231228474-removebg-preview.png";
 import resume from "../assets/Simarjot's Resume (8).pdf";
 import introimage from "../images/1701812591483 (1).jpg";
@@ -15,10 +15,13 @@ import Form from "../components/Form";
 import Footer from "./Footer";
 
 export default function Site() {
+  const honcontextmenu = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+  };
+
   return (
     <>
       <div className="main-container">
-        <Navbar />
         <div id="Home" className="home">
           <div className="container-image-self">
             <div className="image-div">

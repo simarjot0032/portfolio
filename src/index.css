@@ -80,15 +80,6 @@ button:focus-visible {
   padding: 0;
   box-sizing: border-box;
 }
-body::-webkit-scrollbar {
-  background-color: black;
-  width: 5px;
-}
-body::-webkit-scrollbar-thumb {
-  background-color: teal;
-
-  border-radius: 50px;
-}
 
 .maindiv {
   background-color: rgb(38, 38, 38);

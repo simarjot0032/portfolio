@@ -16,16 +16,16 @@ export default function Footer() {
         <div className="navigation-container">
           <p className="navigation-heading">Navigations</p>
           <div className="navigation">
-            <Link to="#Home" className="link--footer">
+            <Link to="#" className="link--footer">
               <li className="link-footer">Home</li>
             </Link>
-            <Link to="#Skills" className="link--footer">
+            <Link to="Skills" className="link--footer">
               <li className="link-footer">Skills</li>
             </Link>
-            <Link to="#Project" className="link--footer">
+            <Link to="Project" className="link--footer">
               <li className="link-footer">Project</li>
             </Link>
-            <Link to="#Contact" className="link--footer">
+            <Link to="Contact" className="link--footer">
               <li className="link-footer">Contact</li>
             </Link>
           </div>
