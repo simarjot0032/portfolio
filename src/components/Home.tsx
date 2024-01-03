@@ -1,5 +1,4 @@
 import "../styles/Home.css";
-
 import Image from "../images/memoji_auto_x2 (2).png";
 import resume from "../assets/Simarjot's Resume (8).pdf";
 import introimage from "../images/1701812591483 (1).jpg";
