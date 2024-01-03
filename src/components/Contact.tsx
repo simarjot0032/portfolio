@@ -3,23 +3,23 @@ import { useForm } from "react-hook-form";
 import "../styles/Home.css";
 
 export default function Contact() {
-  const { register } = useForm();
-  console.log(register("name"));
-  // const nameRef = useRef<HTMLInputElement>(null);
-  // const emailRef = useRef<HTMLInputElement>(null);
-  // const [person, setperson] = useState({
+  const { register, handleSubmit } = useForm();
+  // console.log(register("name"));
+  // const nameRef = useRef<HTMLInputElement>(null); //use ref
+  // const emailRef = useRef<HTMLInputElement>(null); //use ref
+  // const [person, setperson] = useState({ //noremal with use state
   //   name: "",
   //   email: "",
   // });
-  const handleSubmit = (event: FormEvent) => {
-    event.preventDefault();
-    // console.log(person);
-    // console.log(nameRef.current?.value);
-    // console.log(emailRef.current?.value);
-  };
+  // const handleSubmit = (event: FormEvent) => {
+  //   event.preventDefault();
+  //   // console.log(person);
+  //   // console.log(nameRef.current?.value);
+  //   // console.log(emailRef.current?.value);
+  // };
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit((data) => console.log(data))}>
         <div className="name-div">
           <label htmlFor="name" className="label">
             Name:
@@ -35,7 +35,8 @@ export default function Contact() {
             //     name: e.target.value,
             //   });
             // }}
-            name="name"
+
+            {...register("name")}
             placeholder="Enter Your Name"
             // ref={nameRef}
           />
@@ -46,7 +47,7 @@ export default function Contact() {
           </label>
           <input
             type="email"
-            name="email"
+            {...register("email")}
             id="email"
             className="email"
             placeholder="Enter your email"
