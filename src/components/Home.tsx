@@ -1,6 +1,6 @@
 import "../styles/Home.css";
-import Navbar from "./Navbar";
-import Image from "../images/fotor-ai-20231228474-removebg-preview.png";
+
+import Image from "../images/memoji_auto_x2 (2).png";
 import resume from "../assets/Simarjot's Resume (8).pdf";
 import introimage from "../images/1701812591483 (1).jpg";
 import { FaArrowRight } from "react-icons/fa";
@@ -12,12 +12,16 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 import { useForm, ValidationError } from "@formspree/react";
 import Form from "../components/Form";
+import Footer from "./Footer";
 
 export default function Site() {
+  // const honcontextmenu = (e: { preventDefault: () => void }) => {
+  //   e.preventDefault();
+  // };
+
   return (
     <>
       <div className="main-container">
-        <Navbar />
         <div id="Home" className="home">
           <div className="container-image-self">
             <div className="image-div">
@@ -97,19 +101,26 @@ export default function Site() {
                   <a
                     href="https://www.linkedin.com/in/simarjot-singh-75025725b/"
                     className="linktosocial"
+                    target="_blank"
                     style={{ textDecoration: "none", color: "white" }}
                   >
                     <CiLinkedin className="linkedIn-icon" size={48} />
                   </a>
-
                   <a
-                    href=""
+                    href="https://github.com/simarjot0032"
+                    target="_blank"
                     className="linktosocial"
                     style={{ textDecoration: "none" }}
                   >
                     <FaGithub className="github-icon" size={42} />
                   </a>
-                  <a href="" className="linktosocial">
+
+                  <a
+                    href="https://www.instagram.com/simarjot0032/"
+                    className="linktosocial"
+                    target="_blank"
+                    style={{ textDecoration: "none" }}
+                  >
                     <FaInstagram size={42} className="instagram-icon" />
                   </a>
                 </div>
@@ -237,6 +248,9 @@ export default function Site() {
               <Form></Form>
             </div>
           </div>
+        </div>
+        <div className="footer-section">
+          <Footer />
         </div>
       </div>
     </>

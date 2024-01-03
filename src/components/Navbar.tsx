@@ -3,7 +3,7 @@ import "../styles/Navbar.css";
 import { RiMenu4Fill } from "react-icons/ri";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useState } from "react";
-import image from "../images/fotor-ai-20231228474-removebg-preview.png";
+import image from "../images/memoji_auto_x2 (2).png";
 export default function Navbar() {
   const [visiblity, setvisiblity] = useState(false);
   function onclicked() {
@@ -33,22 +33,22 @@ export default function Navbar() {
             className="closebtn"
             onClick={onclosed}
           ></AiOutlineCloseCircle>
-          <Link to="#Home" className="link">
+          <Link to="/" className="link">
             <li className="link-navbar" onClick={onclosed}>
               Home
             </li>
           </Link>
-          <Link to="#Skills" className="link">
+          <Link to="Skills" className="link">
             <li className="link-navbar" onClick={onclosed}>
               Skills
             </li>
           </Link>
-          <Link to="#Project" className="link">
+          <Link to="Project" className="link">
             <li className="link-navbar" onClick={onclosed}>
               Project
             </li>
           </Link>
-          <Link to="#Contact" className="link">
+          <Link to="Contact" className="link">
             <li className="link-navbar" onClick={onclosed}>
               Contact
             </li>
