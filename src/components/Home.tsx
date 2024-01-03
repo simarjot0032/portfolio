@@ -15,9 +15,9 @@ import Form from "../components/Form";
 import Footer from "./Footer";
 
 export default function Site() {
-  const honcontextmenu = (e: { preventDefault: () => void }) => {
-    e.preventDefault();
-  };
+  // const honcontextmenu = (e: { preventDefault: () => void }) => {
+  //   e.preventDefault();
+  // };
 
   return (
     <>
