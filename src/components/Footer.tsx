@@ -2,7 +2,9 @@ import { FaArrowRight, FaDownload } from "react-icons/fa";
 import "../styles/Footer.css";
 import resume from "../assets/Simarjot's Resume (8).pdf";
 import { Link } from "react-router-dom";
-export default function Footer() {
+export default function Footer(this: any) {
+  let date = new Date();
+  let year = date.getFullYear();
   return (
     <>
       <div className="footer-container">
@@ -85,6 +87,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
+      <div className="ccrights">Simarjot Singh &#169; 2023-{year}</div>
     </>
   );
 }
