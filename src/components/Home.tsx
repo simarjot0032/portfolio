@@ -1,6 +1,6 @@
 import "../styles/Home.css";
 
-import Image from "../images/fotor-ai-20231228474-removebg-preview.png";
+import Image from "../images/memoji_auto_x2 (2).png";
 import resume from "../assets/Simarjot's Resume (8).pdf";
 import introimage from "../images/1701812591483 (1).jpg";
 import { FaArrowRight } from "react-icons/fa";
@@ -101,19 +101,26 @@ export default function Site() {
                   <a
                     href="https://www.linkedin.com/in/simarjot-singh-75025725b/"
                     className="linktosocial"
+                    target="_blank"
                     style={{ textDecoration: "none", color: "white" }}
                   >
                     <CiLinkedin className="linkedIn-icon" size={48} />
                   </a>
-
                   <a
-                    href=""
+                    href="https://github.com/simarjot0032"
+                    target="_blank"
                     className="linktosocial"
                     style={{ textDecoration: "none" }}
                   >
                     <FaGithub className="github-icon" size={42} />
                   </a>
-                  <a href="" className="linktosocial">
+
+                  <a
+                    href="https://www.instagram.com/simarjot0032/"
+                    className="linktosocial"
+                    target="_blank"
+                    style={{ textDecoration: "none" }}
+                  >
                     <FaInstagram size={42} className="instagram-icon" />
                   </a>
                 </div>

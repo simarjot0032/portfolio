@@ -1,14 +1,19 @@
 import { FaArrowRight, FaDownload } from "react-icons/fa";
 import "../styles/Footer.css";
 import resume from "../assets/Simarjot's Resume (8).pdf";
-import Logo from "/public/SJS-logos.jpeg";
 import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <>
       <div className="footer-container">
         <div className="logo-tagline">
-          <p className="logo">&lt;/&gt;SJS</p>
+          <p className="logo">
+            &lt;/&gt;
+            <span
+              style={{ display: "inline-block", width: "5px", height: "2px" }}
+            ></span>
+            SJS
+          </p>
           <p className="tagline">
             Elevating Web Experiences with Passion and Precision.
           </p>
@@ -32,16 +37,28 @@ export default function Footer() {
         </div>
         <div className="social-links-container">
           <p className="navigation-heading">Connect!</p>
-          <a href="" className="link--footer">
+          <a
+            href=" https://www.linkedin.com/in/simarjot-singh-75025725b/"
+            target="blank"
+            className="link--footer"
+          >
             <li className="link-footer">LinkedIn</li>
           </a>
-          <a href="" className="link--footer">
+          <a
+            href="https://github.com/simarjot0032"
+            className="link--footer"
+            target="_blank"
+          >
             <li className="link-footer">Github</li>
           </a>
-          <a href="" className="link--footer">
+          <a
+            href="https://www.instagram.com/simarjot0032/"
+            className="link--footer"
+            target="_blank"
+          >
             <li className="link-footer">Instagram</li>
           </a>
-          <a href="" className="link--footer">
+          <a href="mailto:devsimarjs@gmail.com" className="link--footer">
             <li className="link-footer">Mail</li>
           </a>
         </div>

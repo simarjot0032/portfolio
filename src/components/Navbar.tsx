@@ -3,7 +3,7 @@ import "../styles/Navbar.css";
 import { RiMenu4Fill } from "react-icons/ri";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { useState } from "react";
-import image from "../images/fotor-ai-20231228474-removebg-preview.png";
+import image from "../images/memoji_auto_x2 (2).png";
 export default function Navbar() {
   const [visiblity, setvisiblity] = useState(false);
   function onclicked() {
