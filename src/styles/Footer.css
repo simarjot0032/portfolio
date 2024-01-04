@@ -62,6 +62,13 @@
 .footer-container {
   padding-bottom: 0;
 }
+.ccrights {
+  display: flex;
+  justify-content: center;
+  padding: 1.2rem;
+  padding-top: 0.5rem;
+  font-size: 1.2rem;
+}
 @media screen and (min-width: 768px) {
   .footer-container {
     flex-direction: row;
@@ -85,11 +92,25 @@
   .footer-container {
     padding-bottom: 0;
   }
+  .ccrights {
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem;
+    padding-top: 0.5rem;
+    font-size: 1.2rem;
+  }
 }
 @media screen and (min-width: 1024px) {
   .footer-container {
     padding: 2.8rem;
     gap: 2.5rem;
+  }
+  .ccrights {
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem;
+    padding-top: 0.5rem;
+    font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 1300px) {
