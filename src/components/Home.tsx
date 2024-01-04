@@ -107,7 +107,10 @@ export default function Site() {
                 </div>
               </div>
               <div className="intro-container-text">
-                Hey Hello <span className="emoji">👋</span>
+                Hey Hello{" "}
+                <span className="emoji" style={{ fontSize: "1.5rem" }}>
+                  👋
+                </span>
                 <br />
                 <br />
                 I'm Simarjot Singh a passionate web developer on a journey of

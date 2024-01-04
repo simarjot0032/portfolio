@@ -3,6 +3,8 @@ import "../styles/Skills.css";
 import { FaRegLightbulb } from "react-icons/fa";
 import SkillsShowCard from "./SkillsShowCard";
 import { ImHtmlFive2 } from "react-icons/im";
+import { FaCss3 } from "react-icons/fa";
+import { RiJavascriptLine } from "react-icons/ri";
 import Navbar from "./Navbar";
 
 export default function Skills() {
@@ -39,11 +41,35 @@ export default function Skills() {
               valuable insights into my capabilities.
             </p>
           </div>
-          <SkillsShowCard
-            linktoimageoricon={<ImHtmlFive2 />}
+          {/* <SkillsShowCard
+            linktoimageoricon={
+              <ImHtmlFive2
+                size={100}
+                color="#FD5F3D 
+            "
+              />
+            }
             skillcadheading="HTML"
-            textcontent=""
-          ></SkillsShowCard>
+            textcontent=" 
+            I strategically place HTML tags for seamless, accessible content. From text structure to multimedia embedding."
+          ></SkillsShowCard> */}
+          <div className="skillsshowcasecard-container">
+            <SkillsShowCard
+              icon={<ImHtmlFive2 size={65} color="white" />}
+              classname="html"
+              skillname="HTML"
+            ></SkillsShowCard>
+            <SkillsShowCard
+              icon={<FaCss3 color="white" size={65} />}
+              classname="css"
+              skillname="CSS"
+            ></SkillsShowCard>
+            <SkillsShowCard
+              icon={<RiJavascriptLine color="white" size={80} />}
+              classname="js"
+              skillname="JAVASCRIPT"
+            ></SkillsShowCard>
+          </div>
         </div>
       </div>
     </>
