@@ -67,6 +67,10 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800;500&family=Work+Sans:wght@200;300;500&display=swap");
+
 :root {
   --primarycolor: rgb(17, 191, 191);
   --acentcolor: rgb(6, 200, 200);
