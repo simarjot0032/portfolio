@@ -1,11 +1,12 @@
 import React from "react";
+// import { ImHtmlFive2 } from "react-icons/im";
 interface Props {
-  imagelink: string;
+  linktoimageoricon: any;
   skillcadheading: string;
   textcontent: string;
 }
 export default function SkillsShowCard({
-  imagelink,
+  linktoimageoricon,
   skillcadheading,
   textcontent,
 }: Props) {
@@ -13,9 +14,7 @@ export default function SkillsShowCard({
     <>
       <div className="skillsshowcasecard-container">
         <div className="skillcard">
-          <div className="skillcard-image">
-            <img src={imagelink} alt="" className="skillcardimage" />
-          </div>
+          <div className="skillcard-image">{linktoimageoricon}</div>
           <div className="skillcard-content">
             <div className="skillcard-content-headings">{skillcadheading}</div>
             <div className="skillcard-content-text">{textcontent}</div>

@@ -18,10 +18,10 @@ function App() {
       <HashRouter>
         <div style={{ backgroundColor: "black" }}>
           {showpreload && <Preload></Preload>}
-          <Navbar></Navbar>
+          {/* <Navbar></Navbar> */}
           {showhome && (
             <Routes>
-              <Route path="/" element={<Home />}></Route>
+              <Route path="" element={<Home />}></Route>
               <Route path="/Skills" element={<Skills />}></Route>
               <Route path="/Project" element={<UnderCons />}></Route>
               <Route path="/Contact" element={<UnderCons />}></Route>

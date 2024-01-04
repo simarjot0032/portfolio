@@ -2,10 +2,13 @@ import Contact from "./Contact";
 import "../styles/Skills.css";
 import { FaRegLightbulb } from "react-icons/fa";
 import SkillsShowCard from "./SkillsShowCard";
+import { ImHtmlFive2 } from "react-icons/im";
+import Navbar from "./Navbar";
 
 export default function Skills() {
   return (
     <>
+      <Navbar></Navbar>
       <div className="skills">
         <div className="skill-container" style={{ backgroundColor: "black" }}>
           <div className="skill-container-header">
@@ -37,7 +40,7 @@ export default function Skills() {
             </p>
           </div>
           <SkillsShowCard
-            imagelink=""
+            linktoimageoricon={<ImHtmlFive2 />}
             skillcadheading="HTML"
             textcontent=""
           ></SkillsShowCard>

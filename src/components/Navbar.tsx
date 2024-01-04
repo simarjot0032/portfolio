@@ -38,7 +38,7 @@ export default function Navbar() {
               Home
             </li>
           </Link>
-          <Link to="Skills" className="link">
+          <Link to="/Skills" className="link">
             <li className="link-navbar" onClick={onclosed}>
               Skills
             </li>
