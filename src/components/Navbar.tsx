@@ -43,12 +43,12 @@ export default function Navbar() {
               Skills
             </li>
           </Link>
-          <Link to="Project" className="link">
+          <Link to="/Project" className="link">
             <li className="link-navbar" onClick={onclosed}>
               Project
             </li>
           </Link>
-          <Link to="Contact" className="link">
+          <Link to="/Contact" className="link">
             <li className="link-navbar" onClick={onclosed}>
               Contact
             </li>

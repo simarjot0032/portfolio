@@ -1,11 +1,23 @@
 import Contact from "./Contact";
 import "../styles/Skills.css";
-import { FaRegLightbulb } from "react-icons/fa";
+import { FaRegLightbulb, FaGitAlt } from "react-icons/fa";
 import SkillsShowCard from "./SkillsShowCard";
 import { ImHtmlFive2 } from "react-icons/im";
 import { FaCss3 } from "react-icons/fa";
 import { RiJavascriptLine } from "react-icons/ri";
+import { TbBrandTypescript, TbTerminal } from "react-icons/tb";
+import { FaGithub } from "react-icons/fa";
+import { FaNpm } from "react-icons/fa6";
+import { FaElementor } from "react-icons/fa6";
+import { IoTerminalOutline } from "react-icons/io5";
+import { FaWordpressSimple } from "react-icons/fa6";
+import { BsMarkdown } from "react-icons/bs";
+
+import { IoLogoReact } from "react-icons/io5";
+import { BiLogoVisualStudio } from "react-icons/bi";
+
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function Skills() {
   return (
@@ -67,11 +79,68 @@ export default function Skills() {
             <SkillsShowCard
               icon={<RiJavascriptLine color="white" size={80} />}
               classname="js"
-              skillname="JAVASCRIPT"
+              skillname="JS"
+            ></SkillsShowCard>
+            <SkillsShowCard
+              icon={<TbBrandTypescript size={68} color="white" />}
+              classname="ts"
+              skillname="TS"
+            ></SkillsShowCard>
+            <SkillsShowCard
+              icon={<IoLogoReact size={65} color="white" />}
+              classname="react"
+              skillname="REACT TS"
+            ></SkillsShowCard>
+            <SkillsShowCard
+              icon={<FaGitAlt size={68} color="white" />}
+              classname="git"
+              skillname="GIT"
+            ></SkillsShowCard>
+            <SkillsShowCard
+              icon={<FaGithub size={65} color="white" />}
+              classname="github"
+              skillname="GITHUB"
+            ></SkillsShowCard>
+
+            <SkillsShowCard
+              icon={<FaNpm size={65} color="white" />}
+              classname="npm"
+              skillname="NPM"
+            ></SkillsShowCard>
+            <SkillsShowCard
+              icon={<BsMarkdown size={65} color="white" />}
+              classname="markdown"
+              skillname="MD"
+            ></SkillsShowCard>
+            <SkillsShowCard
+              icon={<BiLogoVisualStudio size={65} color="white" />}
+              classname="vs"
+              skillname="VS CODE"
+            ></SkillsShowCard>
+            <SkillsShowCard
+              icon={<FaElementor size={65} color="white" />}
+              classname="elementor"
+              skillname="ELEMENTOR"
+            ></SkillsShowCard>
+            <SkillsShowCard
+              icon={<FaWordpressSimple size={65} color="white" />}
+              classname="wordpress"
+              skillname="WORDPRESS"
+            ></SkillsShowCard>
+            <SkillsShowCard
+              icon={<TbTerminal size={65} color="white" />}
+              classname="terminal"
+              skillname="TERMINAL"
+            ></SkillsShowCard>
+            <SkillsShowCard
+              icon={<FaGithub size={65} color="white" />}
+              classname="pages"
+              skillname="GITHUB PAGES"
             ></SkillsShowCard>
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 }
