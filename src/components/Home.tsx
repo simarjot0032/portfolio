@@ -12,6 +12,7 @@ import { FaInstagram } from "react-icons/fa";
 import { useForm, ValidationError } from "@formspree/react";
 import Form from "../components/Form";
 import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 export default function Site() {
   // const honcontextmenu = (e: { preventDefault: () => void }) => {
@@ -20,6 +21,7 @@ export default function Site() {
 
   return (
     <>
+      <Navbar></Navbar>
       <div className="main-container">
         <div id="Home" className="home">
           <div className="container-image-self">
@@ -105,7 +107,10 @@ export default function Site() {
                 </div>
               </div>
               <div className="intro-container-text">
-                Hey Hello <span className="emoji">👋</span>
+                Hey Hello{" "}
+                <span className="emoji" style={{ fontSize: "1.5rem" }}>
+                  👋
+                </span>
                 <br />
                 <br />
                 I'm Simarjot Singh a passionate web developer on a journey of
