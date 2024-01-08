@@ -1,10 +1,11 @@
 import { Route, Router, HashRouter, Routes } from "react-router-dom";
 import UnderCons from "./components/UnderCons";
-// import Navbar from "./components/Navbar";
+
 import Home from "./components/Home";
 import Preload from "./components/Preload";
 import { useState } from "react";
 import Skills from "./components/Skills";
+import Project from "./components/Poject";
 import Navbar from "./components/Navbar";
 function App() {
   const [showpreload, setpreload] = useState(true);
@@ -23,7 +24,7 @@ function App() {
             <Routes>
               <Route path="" element={<Home />}></Route>
               <Route path="/Skills" element={<Skills />}></Route>
-              <Route path="/Project" element={<UnderCons />}></Route>
+              <Route path="/Project" element={<Project />}></Route>
               <Route path="/Contact" element={<UnderCons />}></Route>
             </Routes>
           )}

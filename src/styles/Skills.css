@@ -87,6 +87,9 @@
 .terminal {
   background-color: black;
 }
+.supabase {
+  background-color: #2ca56e;
+}
 .vs {
   background-color: #0078db;
 }
@@ -159,7 +162,7 @@
     text-align: start;
   }
   .skill-container {
-    max-width: 680px;
+    max-width: var(--tabwidth);
   }
   .skillsshowcasecard-container {
     display: flex;
@@ -178,7 +181,7 @@
     text-align: start;
   }
   .skill-container {
-    max-width: 800px;
+    max-width: var(--smalllaptopwidth);
   }
   .skillsshowcasecard-container {
     display: flex;
@@ -197,7 +200,7 @@
     text-align: start;
   }
   .skill-container {
-    max-width: 850px;
+    max-width: var(--laptopwidth);
   }
   .skillsshowcasecard-container {
     display: flex;
