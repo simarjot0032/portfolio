@@ -36,7 +36,7 @@
   font-family: monospace;
 }
 .navright {
-  background-color: rgba(0, 0, 0, 0.63);
+  background-color: rgb(0, 0, 0);
   display: none;
   flex-direction: column;
   justify-content: center;

@@ -9,8 +9,8 @@ import { HiChevronDown } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
-import { useForm, ValidationError } from "@formspree/react";
-import Form from "../components/Form";
+
+import Form from "./Formf";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
@@ -18,6 +18,12 @@ export default function Site() {
   // const honcontextmenu = (e: { preventDefault: () => void }) => {
   //   e.preventDefault();
   // };
+  const handlescroll = () => {
+    document.getElementById("aboutme")?.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+    });
+  };
 
   return (
     <>
@@ -59,16 +65,9 @@ export default function Site() {
               </div>
             </div>
           </div>
-          <Link
-            to="aboutme"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            href="#aboutme"
-            className="linktodown"
-          >
+          <a className="linktodown" onClick={handlescroll}>
             <HiChevronDown color="teal" size={60} className="linktodownbtn" />
-          </Link>
+          </a>
           <div className="intro-container" id="aboutme">
             <div className="intro-container-header">
               <div className="intro-container-header-content">About Me!</div>

@@ -2,6 +2,15 @@ import { useState } from "react";
 import "../styles/Project.css";
 import Navbar from "./Navbar";
 import { IoIosCodeWorking } from "react-icons/io";
+import ProjectCard from "./ProjectCard";
+import skriper from "../images/Project/Screenshot from 2024-01-08 21-05-48.png";
+import apple from "../images/Project/Screenshot from 2024-01-08 22-21-41.png";
+import ball from "../images/Project/Screenshot from 2024-01-09 01-04-48.png";
+import modal from "../images/Project/modal.png";
+import counter from "../images/Project/counter.png";
+import gk from "../images/Project/gk.png";
+import fs from "../images/Project/fs.png";
+import Footer from "./Footer";
 export default function Poject() {
   const [tabindex, settabindex] = useState(1);
   function switchtab(n: number): any {
@@ -45,15 +54,134 @@ export default function Poject() {
           </div>
           <div className="project-showcase-heading">Project's Showcase</div>
           <div className="project-tabs-container">
-            <div className="beginners-tab" onClick={() => switchtab(1)}>
+            <div
+              className={tabindex === 1 ? "beginners-tab" : "colorless-tab"}
+              onClick={() => switchtab(1)}
+            >
               Beginner Level
             </div>
-            <div className="advance-tab" onClick={() => switchtab(2)}>
+            <div
+              className={tabindex === 2 ? "advance-tab" : "colorless-tab"}
+              onClick={() => switchtab(2)}
+            >
               Advance Level
             </div>
           </div>
-          <div className="project-showcase-contanier"></div>
+          <div
+            className={
+              tabindex === 1
+                ? "content-display"
+                : "project-showcase-container-beginner"
+            }
+          >
+            <ProjectCard
+              imagelink={apple}
+              heading={"Apple Watch"}
+              tags={
+                <>
+                  <div className="html-tag">#HTML</div>
+                  <div className="css-tag">#CSS</div>
+                </>
+              }
+              text="I have developed a Apple Watch landing page. This project not only allowed me to reinforce my skills in front-end development, also provided an opportunity to delve into design aesthetics."
+              projectlink="https://simarjot0032.github.io/sampleproject/apple%20watch/html/index.html"
+            ></ProjectCard>
+            <ProjectCard
+              imagelink={skriper}
+              heading={"Skriper Clone"}
+              tags={[
+                <>
+                  <div className="html-tag">#HTML</div>
+                  <div className="css-tag">#CSS</div>
+                </>,
+              ]}
+              text="
+              I honed my HTML and CSS skills by creating a compact front-end clone of the Skriper website's home page. This project showcases my dedication to clean and responsive web design to make match it."
+              projectlink="https://simarjot0032.github.io/sampleproject/skriper/html/index.html"
+            ></ProjectCard>
+            <ProjectCard
+              imagelink={ball}
+              heading={"Animation"}
+              tags={[
+                <>
+                  <div className="html-tag">#HTML</div>
+                  <div className="css-tag">#CSS</div>
+                </>,
+              ]}
+              text="In my journey to expand my web development skills, I undertook a project focused on animation simple one but impactful ball animation designed.This helped me to delvelop animation in website. "
+              projectlink=""
+            ></ProjectCard>
+            <ProjectCard
+              imagelink={modal}
+              heading={"Modals"}
+              tags={
+                <>
+                  <div className="html-tag">#HTML</div>
+                  <div className="css-tag">#CSS</div>
+                  <div className="js-tag">#JS</div>
+                </>
+              }
+              text="In an effort to enhance my JavaScript proficiency, I embarked on a project centered around creating a dynamic modal. This modal is designed to open and close at the user's command."
+              projectlink="https://simarjot0032.github.io/sampleproject/jspractice/models/"
+            ></ProjectCard>
+            <ProjectCard
+              imagelink={counter}
+              heading={"Counter"}
+              tags={
+                <>
+                  <div className="html-tag">#HTML</div>
+                  <div className="css-tag">#CSS</div>
+                  <div className="js-tag">#JS</div>
+                </>
+              }
+              text="In my pursuit of honing my web development skills, I have crafted a dynamic counter utilizing HTML, CSS, and JavaScript, complete with an innovative sound feature. This project served as an immersive opportunity to develop my understanding of front-end development."
+              projectlink="https://simarjot0032.github.io/sampleproject/jspractice/counter/"
+            ></ProjectCard>
+          </div>
+          <div
+            className={
+              tabindex === 2
+                ? "content-display"
+                : "project-showcase-container-advance"
+            }
+          >
+            <ProjectCard
+              imagelink={gk}
+              heading={"G.K. Enterprises"}
+              tags={
+                <>
+                  <div className="html-tag">#HTML</div>
+                  <div className="css-tag">#CSS</div>
+                  <div className="js-tag">#JS</div>
+                  <div className="supabase-tag" style={{ fontSize: "1rem" }}>
+                    #SUPABASE
+                  </div>
+                </>
+              }
+              text="In my advanced exploration of full-stack development, I undertook a comprehensive project named GK Enterprise, an innovative website that seamlessly integrates HTML, CSS, and JavaScript with Supabase."
+              projectlink="https://gkenterprises.me/"
+            ></ProjectCard>
+            <ProjectCard
+              imagelink={fs}
+              heading={"Functional Science"}
+              tags={
+                <>
+                  <div className="html-tag">#HTML</div>
+                  <div className="css-tag">#CSS</div>
+                  <div className="ts-tag">#TS</div>
+                  <div className="react-tag" style={{ fontSize: "1rem" }}>
+                    #REACT-TS
+                  </div>
+                </>
+              }
+              text="In the realm of education technology, I have made a website named 'Functional Science,' tailored specifically for coaching students in classes 9, 10, 11, and 12 with react with typescript for better performance."
+              projectlink="https://simarjot0032.github.io/functional_science/"
+            ></ProjectCard>
+          </div>
         </div>
+      </div>
+      <div className="footer-section">
+        <Footer></Footer>
       </div>
     </>
   );

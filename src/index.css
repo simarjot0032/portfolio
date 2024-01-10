@@ -79,8 +79,8 @@ button:focus-visible {
   --otherfont: "Work Sans", sans-serif;
   --anotherfont: "Work Sans", sans-serif;
   --tabwidth: 680px;
-  --smalllaptopwidth: 800px;
-  --laptopwidth: 850px;
+  --smalllaptopwidth: 900px;
+  --laptopwidth: 1000px;
 }
 * {
   margin: 0;

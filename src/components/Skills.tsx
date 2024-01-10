@@ -1,4 +1,3 @@
-import Contact from "./Contact";
 import "../styles/Skills.css";
 import { FaRegLightbulb, FaGitAlt } from "react-icons/fa";
 import SkillsShowCard from "./SkillsShowCard";
@@ -9,7 +8,6 @@ import { TbBrandTypescript, TbTerminal } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 import { FaNpm } from "react-icons/fa6";
 import { FaElementor } from "react-icons/fa6";
-import { IoTerminalOutline } from "react-icons/io5";
 import { FaWordpressSimple } from "react-icons/fa6";
 import { BsMarkdown } from "react-icons/bs";
 import { RiSupabaseLine } from "react-icons/ri";

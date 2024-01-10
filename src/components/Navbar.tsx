@@ -53,6 +53,11 @@ export default function Navbar() {
               Contact
             </li>
           </Link>
+          <Link to="/Blog" className="link">
+            <li className="link-navbar" onClick={onclosed}>
+              Blog
+            </li>
+          </Link>
         </div>
       </div>
     </>
