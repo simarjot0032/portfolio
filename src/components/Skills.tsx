@@ -1,4 +1,3 @@
-import Contact from "./Contact";
 import "../styles/Skills.css";
 import { FaRegLightbulb, FaGitAlt } from "react-icons/fa";
 import SkillsShowCard from "./SkillsShowCard";
@@ -9,10 +8,9 @@ import { TbBrandTypescript, TbTerminal } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 import { FaNpm } from "react-icons/fa6";
 import { FaElementor } from "react-icons/fa6";
-import { IoTerminalOutline } from "react-icons/io5";
 import { FaWordpressSimple } from "react-icons/fa6";
 import { BsMarkdown } from "react-icons/bs";
-
+import { RiSupabaseLine } from "react-icons/ri";
 import { IoLogoReact } from "react-icons/io5";
 import { BiLogoVisualStudio } from "react-icons/bi";
 
@@ -34,7 +32,7 @@ export default function Skills() {
           <div className="skill-container-content-container">
             <p className="skill-container-content">
               {" "}
-              Welcome to my Skills Page{" "}
+              Welcome to my <b>Skills</b> Page{" "}
               <span style={{ fontSize: "1.5rem" }}>&#128075;</span>!
               <br />
               <br />
@@ -116,6 +114,11 @@ export default function Skills() {
               icon={<BiLogoVisualStudio size={65} color="white" />}
               classname="vs"
               skillname="VS CODE"
+            ></SkillsShowCard>
+            <SkillsShowCard
+              icon={<RiSupabaseLine size={65} color="white" />}
+              classname="supabase"
+              skillname="SUPABSAE"
             ></SkillsShowCard>
             <SkillsShowCard
               icon={<FaElementor size={65} color="white" />}
