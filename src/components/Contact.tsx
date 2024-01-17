@@ -72,7 +72,7 @@ export default function Contact() {
             Submit
           </button>
         </div>
-      </form> */}
+      </form>  praactice*/}
       <Navbar></Navbar>
       <div className="contact-container">
         <div className="lines-container">
@@ -92,7 +92,7 @@ export default function Contact() {
           </div>
           <div className="line2-container">
             <div className="line2"></div>
-            <div className="github">
+            <div className="github_">
               <a
                 href="https://github.com/simarjot0032"
                 target="_blank"

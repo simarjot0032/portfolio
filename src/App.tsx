@@ -8,7 +8,7 @@ import Skills from "./components/Skills";
 import Project from "./components/Poject";
 import Cursor from "./components/Cursor";
 import Contact from "./components/Contact";
-
+import Blog from "./components/Blog";
 function App() {
   const [showpreload, setpreload] = useState(true);
   const [showhome, sethome] = useState(false);
@@ -18,7 +18,7 @@ function App() {
   }, 2850);
   return (
     <>
-      <Cursor></Cursor>
+      {/* <Cursor></Cursor> */}
       <HashRouter>
         <div style={{ backgroundColor: "black" }}>
           {showpreload && <Preload></Preload>}
@@ -29,7 +29,7 @@ function App() {
               <Route path="/Skills" element={<Skills />}></Route>
               <Route path="/Project" element={<Project />}></Route>
               <Route path="/Contact" element={<Contact />}></Route>
-              <Route path="/Blog" element={<UnderCons />}></Route>
+              <Route path="/Blog" element={<Blog />}></Route>
             </Routes>
           )}
         </div>

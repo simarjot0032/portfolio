@@ -90,11 +90,12 @@
   border-radius: 20px;
   user-select: none;
   flex-direction: column;
-  max-width: 300px;
-  height: 495px;
+  max-width: 380px;
+  /* width: 380px; */
+  height: 500px;
   padding: 0.2rem;
-  position: relative;
-  /* height: fit-content; */
+
+  height: fit-content;
 }
 
 .project-image {
@@ -137,18 +138,18 @@
 }
 .project-card-content-text {
   font-size: 1.2rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: var(--selffont);
   height: 115px;
   overflow: auto;
   overflow-x: hidden;
 }
 .project-card-content-text::-webkit-scrollbar,
 .project-card-content-text::-webkit-scrollbar-corner {
-  background-color: rgba(105, 105, 105, 0.38);
+  background-color: rgba(105, 105, 105, 0);
   width: 5px;
 }
 .project-card-content-text::-webkit-scrollbar-thumb {
-  background-color: var(--primarycolor);
+  background-color: transparent;
   border-radius: 10px;
 }
 
@@ -160,8 +161,8 @@
   font-size: 1.5rem;
   background-color: teal;
   font-weight: 800;
-  position: absolute;
-  top: 87%;
+  /* position: absolute;
+  top: 87%; */
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .projects-section-container {
