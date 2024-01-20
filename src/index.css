@@ -78,6 +78,7 @@ button:focus-visible {
   --selffont: "Open Sans", sans-serif;
   --otherfont: "Work Sans", sans-serif;
   --anotherfont: "Work Sans", sans-serif;
+  --cardsbg: linear-gradient(147deg, #444247 0%, #282828 74%);
   --tabwidth: 680px;
   --smalllaptopwidth: 900px;
   --laptopwidth: 1000px;
@@ -90,4 +91,5 @@ button:focus-visible {
 
 .maindiv {
   background-color: rgb(38, 38, 38);
+  /* min-height: 100vh; */
 }

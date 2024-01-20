@@ -84,7 +84,7 @@
 .project-cards {
   background-color: #0c1d22;
   background-color: #555457;
-  background-image: linear-gradient(147deg, #4d4855 0%, #282828 74%);
+  background-image: var(--cardsbg);
   border: 2px solid #000000;
   display: flex;
   border-radius: 20px;

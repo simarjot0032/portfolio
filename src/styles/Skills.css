@@ -1,6 +1,7 @@
 .skills {
   display: flex;
   justify-content: center;
+  min-height: 100vh;
 }
 .skill-container {
   display: flex;
@@ -18,7 +19,6 @@
 }
 .skill-container-content {
   font-family: var(--otherfont);
-  /* text-align: justify; */
   font-size: 1.5rem;
   font-weight: 200;
   color: rgb(204, 204, 204);

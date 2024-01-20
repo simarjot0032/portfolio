@@ -16,6 +16,12 @@ function App() {
     setpreload(false);
     sethome(true);
   }, 2850);
+  const routes = [
+    {
+      path: "What is web",
+      element: <UnderCons></UnderCons>,
+    },
+  ];
   return (
     <>
       {/* <Cursor></Cursor> */}
@@ -30,6 +36,9 @@ function App() {
               <Route path="/Project" element={<Project />}></Route>
               <Route path="/Contact" element={<Contact />}></Route>
               <Route path="/Blog" element={<Blog />}></Route>
+              {routes.map((route): any => {
+                return <Route path={route.path} element={route.element} />;
+              })}
             </Routes>
           )}
         </div>

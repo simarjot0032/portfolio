@@ -4,6 +4,7 @@
   gap: 2rem;
   align-items: center;
   background-color: black;
+  min-height: 100vh;
 }
 .lines-container {
   width: 100vw;

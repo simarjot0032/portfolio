@@ -99,7 +99,7 @@
   color: rgb(17, 191, 191);
   transition: all 0.3s linear;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 750px) {
   .navbar {
     justify-content: space-around;
     position: sticky;
