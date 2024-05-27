@@ -44,7 +44,7 @@ export default function Blog() {
             </div>
           </div>
           <div className="blogscard-container">
-            {blogcontent.map((blog): any => {
+            {blogcontent.map((blog) => {
               return (
                 <Link to="/What is web" className="link">
                   <Blogcards

@@ -9,6 +9,8 @@ import Project from "./components/Poject";
 import Cursor from "./components/Cursor";
 import Contact from "./components/Contact";
 import Blog from "./components/Blog";
+import Whatweb from "./components/Blogrender/Whatweb";
+// import Whatiswebdeb from "./components/Blogrender/Whatweb";
 function App() {
   const [showpreload, setpreload] = useState(true);
   const [showhome, sethome] = useState(false);
@@ -18,8 +20,8 @@ function App() {
   }, 2850);
   const routes = [
     {
-      path: "What is web",
-      element: <UnderCons></UnderCons>,
+      path: "/What is web",
+      element: <Whatweb />,
     },
   ];
   return (
