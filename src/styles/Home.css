@@ -228,7 +228,7 @@ body {
   padding-bottom: 1rem;
 }
 .lets-connect-content {
-  font-family: var(--otherfont);
+  font-family: var(--selffont);
   font-size: 1.2rem;
   font-weight: 500;
 }

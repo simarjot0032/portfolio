@@ -1,0 +1,78 @@
+.main-blog {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+.blog-container {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.blog-container-heading {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.blog-heading {
+  font-size: 2rem;
+  color: var(--primarycolor);
+  font-family: var(--otherfont);
+}
+.blog-content-container {
+  padding-top: 1rem;
+}
+.content {
+  font-family: var(--otherfont);
+  font-size: 1.5rem;
+  color: rgb(208, 208, 208);
+}
+
+.blogscard-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.each-blog-container {
+  padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background: var(--cardsbg);
+
+  border-radius: 20px;
+  gap: 1rem;
+  width: 290px;
+}
+.bheading-container {
+  height: fit-content;
+}
+.each-blog-heading {
+  color: var(--primarycolor);
+  font-family: var(--anotherfont);
+  font-size: 2rem;
+}
+.small-intro-container {
+  white-space: wrap;
+}
+.small-intro {
+  font-size: 1.5rem;
+  color: rgb(209, 209, 209);
+  font-family: var(--anotherfont);
+  overflow: hidden;
+  text-overflow: wrap;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .blog-container {
+    max-width: var(--tabwidth);
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  .blog-container {
+    max-width: var(--smalllaptopwidth);
+  }
+}
+@media screen and (min-width: 1300px) {
+  .blog-container {
+    max-width: var(--laptopwidth);
+  }
+}
