@@ -206,8 +206,8 @@ body {
 .intro-container-text {
   margin-top: 1rem;
   font-family: var(--otherfont);
-  font-size: 1.5rem;
-  /* text-align: j; */
+  font-size: 1.2rem;
+  text-align: justify;
   width: 100%;
   font-weight: 400;
 }
