@@ -25,6 +25,7 @@
   font-family: var(--otherfont);
   font-size: 1.5rem;
   color: rgb(208, 208, 208);
+  line-height: 2.2rem;
 }
 
 .blogscard-container {
@@ -48,13 +49,13 @@
 .each-blog-heading {
   color: var(--primarycolor);
   font-family: var(--anotherfont);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .small-intro-container {
   white-space: wrap;
 }
 .small-intro {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: rgb(209, 209, 209);
   font-family: var(--anotherfont);
   overflow: hidden;
