@@ -1,9 +1,9 @@
 import React from "react";
 interface Props {
   heading: any;
-  intro: any;
+  description: any;
 }
-export default function ({ heading, intro }: Props) {
+export default function ({ heading, description }: Props) {
   return (
     <>
       <div className="each-blog-container">
@@ -11,7 +11,7 @@ export default function ({ heading, intro }: Props) {
           <div className="each-blog-heading">{heading}</div>
         </div>
         <div className="small-intro-container">
-          <div className="small-intro">{intro}</div>
+          <div className="small-intro">{description}</div>
         </div>
       </div>
     </>

@@ -7,8 +7,8 @@ export default function Blog() {
   const blogcontent = [
     {
       title: "What is web dev? How to start it?",
-      description:
-        "this is sample inro for blog for tesing snflanfaslkfnaslfnalsfnaslfn alkfnalfka",
+      description: "this is sample inro for blog for tesing",
+      link: "/What is web dev? How to start it?",
     },
   ];
   return (
@@ -45,11 +45,11 @@ export default function Blog() {
           <div className="blogscard-container">
             {blogcontent.map((blog) => {
               return (
-                <Link to="/What is web" className="link">
+                <Link to={blog.link} className="link">
                   <Blogcards
                     key={blog.title}
                     heading={blog.title}
-                    intro={blog.description}
+                    description={blog.description}
                   />
                 </Link>
               );
