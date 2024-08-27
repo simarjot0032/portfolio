@@ -106,7 +106,7 @@
 }
 .project-card-content-heading {
   color: var(--primarycolor);
-  font-family: var(--selffont);
+  font-family: var(--headingFont);
   font-size: 2rem;
   font-weight: 500;
 }
@@ -158,6 +158,9 @@
   border-radius: 10px;
   font-family: var(--selffont);
 }
+.content-display {
+  margin-top: 1.2rem;
+}
 @media screen and (min-width: 720px) {
   .project-cards {
     width: 100%;
@@ -168,6 +171,9 @@
   }
   .project-image {
     height: 140px;
+  }
+  .project-content {
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {

@@ -34,7 +34,7 @@ export default function Poject() {
             </div>
           </div>
           {/* <div className="project-showcase-heading">Project's Showcase</div> */}
-          <div className="project-tabs-container">
+          {/* <div className="project-tabs-container">
             <div
               className={tabindex === 1 ? "beginners-tab" : "colorless-tab"}
               onClick={() => switchtab(1)}
@@ -47,7 +47,7 @@ export default function Poject() {
             >
               Advance Level
             </div>
-          </div>
+          </div> */}
           <div
             className={
               tabindex === 1
@@ -91,14 +91,14 @@ export default function Poject() {
               text="In my pursuit of honing my web development skills, I have crafted a dynamic counter utilizing HTML, CSS, and JavaScript, complete with an innovative sound feature. This project served as an immersive opportunity to develop my understanding of front-end development."
               projectlink="https://simarjot0032.github.io/sampleproject/jspractice/counter/"
             ></ProjectCard>
-          </div>
-          <div
+            {/* </div> */}
+            {/* <div
             className={
               tabindex === 2
                 ? "content-display"
-                : "project-showcase-container-advance"
+                : "project-showcase-container-advance content-display"
             }
-          >
+          > */}
             <ProjectCard
               imagelink={gk}
               heading={"G.K. Enterprises"}
