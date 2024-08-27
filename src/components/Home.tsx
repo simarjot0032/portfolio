@@ -1,15 +1,13 @@
 import "../styles/Home.css";
 import Image from "../images/memoji_auto_x2 (2).png";
-import resume from "../assets/Simarjot's Resume (8).pdf";
-import introimage from "../images/1701812591483 (1).jpg";
+import resume from "../assets/resume-simarjot singh.pdf";
+import introimage from "../images/profilepic.jpeg";
 import { FaArrowRight } from "react-icons/fa";
-import { Link } from "react-scroll";
 import { FaDownload } from "react-icons/fa";
 import { HiChevronDown } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
-
 import Form from "./Formf";
 import Footer from "./Footer";
 import Navbar from "./Navbar";

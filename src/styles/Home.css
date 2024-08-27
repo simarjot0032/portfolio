@@ -197,6 +197,7 @@ body {
   width: 220px;
   border-radius: 50%;
   height: 220px;
+  object-fit: cover;
 }
 .intro-container-links {
   display: flex;
