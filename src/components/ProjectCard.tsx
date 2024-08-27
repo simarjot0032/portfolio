@@ -1,6 +1,6 @@
 interface Props {
   imagelink: string;
-  heading: any;
+  heading: string;
   tags: any;
   text: string;
   projectlink: string;
@@ -20,7 +20,11 @@ export default function ({
         </div>
         <div className="project-card-content">
           <div className="project-card-content-heading">{heading}</div>
-          <div className="project-card-content-tags">{tags}</div>
+          <div className="project-card-content-tags">
+            {tags.map((tag: any) => {
+              return <div className="tag-name">{tag}</div>;
+            })}
+          </div>
           <div className="project-card-content-text">{text}</div>
         </div>
         <div className="view-btn-div">

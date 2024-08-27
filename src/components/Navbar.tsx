@@ -53,11 +53,11 @@ export default function Navbar() {
               Contact
             </li>
           </Link>
-          <Link to="/Blog" className="link">
+          <a href="https://simarjs.medium.com/" className="link">
             <li className="link-navbar" onClick={onclosed}>
               Blog
             </li>
-          </Link>
+          </a>
         </div>
       </div>
     </>

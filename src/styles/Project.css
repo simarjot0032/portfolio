@@ -82,27 +82,24 @@
   gap: 2rem;
 }
 .project-cards {
-  background-color: #0c1d22;
-  background-color: #555457;
   background-image: var(--cardsbg);
   border: 2px solid #000000;
   display: flex;
   border-radius: 20px;
   user-select: none;
   flex-direction: column;
-  max-width: 380px;
-  /* width: 380px; */
-  height: 500px;
-  padding: 0.2rem;
-
+  padding: 0.2rem 0.2rem 0.5rem 0.2rem;
   height: fit-content;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
 }
 
 .project-image {
-  height: 202px;
+  height: 182px;
   border-radius: 20px 20px 0 0;
   width: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 .project-card-content {
   padding: 1rem;
@@ -111,20 +108,14 @@
   color: var(--primarycolor);
   font-family: var(--selffont);
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 500;
 }
 .project-card-content-tags {
   display: flex;
   gap: 0.5rem;
   margin: 0.8rem 0;
 }
-.html-tag,
-.css-tag,
-.view,
-.js-tag,
-.supabase-tag,
-.ts-tag,
-.react-tag {
+.tag-name {
   background-color: rgb(0, 76, 76);
   padding: 0.5rem;
   border-radius: 12px;
@@ -132,16 +123,16 @@
   align-items: center;
   color: white;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: var(--selffont);
   width: fit-content;
 }
 .project-card-content-text {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: var(--selffont);
-  height: 115px;
-  overflow: auto;
-  overflow-x: hidden;
+  max-height: 115px;
+  overflow-y: auto;
+  color: rgba(213, 211, 211, 0.898);
 }
 .project-card-content-text::-webkit-scrollbar,
 .project-card-content-text::-webkit-scrollbar-corner {
@@ -155,14 +146,29 @@
 
 .view-btn-div {
   padding: 0 0 1rem 1rem;
+  position: absolute;
+  bottom: 2px;
 }
 .view {
-  padding: 1rem;
-  font-size: 1.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
   background-color: teal;
   font-weight: 800;
-  /* position: absolute;
-  top: 87%; */
+  color: rgb(225, 225, 225);
+  border-radius: 10px;
+  font-family: var(--selffont);
+}
+@media screen and (min-width: 720px) {
+  .project-cards {
+    width: 100%;
+    max-width: 320px;
+  }
+  .projects-heading {
+    font-size: 1.5rem;
+  }
+  .project-image {
+    height: 140px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .projects-section-container {
@@ -201,7 +207,7 @@
   .advance-tab,
   .colorless-tab {
     padding: 1rem 0;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 }
 @media screen and (min-width: 1301px) {
@@ -219,6 +225,6 @@
   .advance-tab,
   .colorless-tab {
     padding: 1rem 0;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
 }
