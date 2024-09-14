@@ -1,7 +1,9 @@
 export default function Form() {
   return (
     <>
-      <div className="form-container"></div>
+      <div className="contact-form-container">
+        <form id="contact-form"></form>
+      </div>
     </>
   );
 }
