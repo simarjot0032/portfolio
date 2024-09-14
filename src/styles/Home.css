@@ -298,7 +298,8 @@ body {
   margin: 1rem 0 0 0;
 }
 .lets-connect-content {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  color: rgb(235, 235, 235);
 }
 @keyframes emojiwave {
   0% {

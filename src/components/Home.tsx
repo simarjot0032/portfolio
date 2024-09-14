@@ -1,6 +1,5 @@
 import "../styles/Home.css";
 import Image from "../images/memoji_auto_x2 (2).png";
-import resume from "../assets/resume-simarjot singh.pdf";
 import introimage from "../images/profilepic.jpeg";
 import { FaArrowRight } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa";
@@ -8,14 +7,10 @@ import { HiChevronDown } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
-import Form from "./Formf";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 export default function Site() {
-  // const honcontextmenu = (e: { preventDefault: () => void }) => {
-  //   e.preventDefault();
-  // };
   const handlescroll = () => {
     document.getElementById("aboutme")?.scrollIntoView({
       behavior: "smooth",
@@ -37,7 +32,7 @@ export default function Site() {
               <div className="self-container">
                 <div className="self-container-line">HI I AM</div>
                 <div className="self-container-secondline">Simarjot Singh</div>
-                <div className="self-container-lastline">Web Developer</div>
+                <div className="self-container-lastline"> Developer</div>
               </div>
               <div className="hireme-resume">
                 <a href="mailto:devsimarjs@gmail.com" className="linktohireme">
@@ -50,9 +45,13 @@ export default function Site() {
                     />
                   </button>
                 </a>
-                <a href={resume} className="linktoresume" download={true}>
+                <a
+                  href="https://drive.google.com/file/d/1YTiSsuuwVdDtIK5_sG7vqDwzmuSZzYKY/view?usp=drive_link"
+                  className="linktoresume"
+                  download={true}
+                >
                   <button className="resume">
-                    Resume{" "}
+                    Resume
                     <FaDownload
                       color="white"
                       style={{ marginLeft: "5px" }}
@@ -226,7 +225,7 @@ export default function Site() {
                   </button>
                 </div>
               </form> */}
-              <Form></Form>
+              {/* <Form></Form> */}
             </div>
           </div>
         </div>
