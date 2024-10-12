@@ -1,11 +1,7 @@
-import { FormEvent, useRef, useState } from "react";
-import { useForm } from "react-hook-form";
-import "../styles/Home.css";
 import "../styles/Contact.css";
 import Navbar from "./Navbar";
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub, FaInstagram } from "react-icons/fa";
-
 import Footer from "./Footer";
 import Form from "./Form";
 
@@ -48,22 +44,13 @@ export default function Contact() {
             </a>
           </div>
         </div>
-        <div className="lets-connect">
-          <div className="lets-connect-header">Let's Connect!</div>
-          <div className="lets-connect-content">
-            I believe in the power of collaboration and open communication.
-            Whether you have an exciting project in mind, want to discuss the
-            latest trends in technology, or just want to say hello, I'm always
-            eager to connect with like-minded individuals.
-          </div>
-          <div className="lets-connect-form">
-            <Form />
-          </div>
+
+        <div className="lets-connect" style={{ padding: "0", margin: "0" }}>
+          <Form />
         </div>
       </div>
-      <div className="footer-section">
-        <Footer></Footer>
-      </div>
+
+      <Footer></Footer>
     </>
   );
 }

@@ -7,6 +7,7 @@ const firebaseConfig = {
   storageBucket: "portfolio-426ad.appspot.com",
   messagingSenderId: "241141375726",
   appId: "1:241141375726:web:cdf9e1b1b702ce9fa609ff",
+  databaseURL: "https://portfolio-426ad-default-rtdb.firebaseio.com/",
 };
 
 const app = initializeApp(firebaseConfig);

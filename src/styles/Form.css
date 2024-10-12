@@ -1,0 +1,44 @@
+.contact-form-container {
+  width: 100%;
+}
+.form-heading {
+  font-size: 2.9rem;
+  margin-bottom: 25px;
+  color: var(--primarycolor);
+}
+#user-name,
+#user-email,
+#user-phone-number,
+#user-message {
+  padding: 8px;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 1.1rem;
+  font-family: var(--otherfont);
+  margin: 12px 0 20px 0;
+}
+label,
+.form-heading {
+  font-family: var(--otherfont);
+}
+label {
+  font-size: 1.5rem;
+  color: var(--primarycolor);
+}
+#submit-btn {
+  padding: 8px;
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: var(--otherfont);
+  border-radius: 10px;
+  background-color: transparent;
+  color: var(--primarycolor);
+  border: 2px solid var(--primarycolor);
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+#submit-btn:hover {
+  border: 2px solid var(--primarycolor);
+  background-color: var(--primarycolor);
+  color: white;
+}

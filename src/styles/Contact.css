@@ -6,12 +6,6 @@
   background-color: black;
   min-height: 100vh;
 }
-.lines-container {
-  width: 100vw;
-  max-width: 500px;
-  display: flex;
-  justify-content: space-around;
-}
 .contact-social-links-container {
   display: flex;
   gap: 50px;

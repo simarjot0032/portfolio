@@ -37,7 +37,7 @@ export default function Site() {
               <div className="hireme-resume">
                 <a href="mailto:devsimarjs@gmail.com" className="linktohireme">
                   <button className="hireme">
-                    Hire Me!{" "}
+                    Hire Me!
                     <FaArrowRight
                       color="white"
                       style={{ marginLeft: "5px" }}
@@ -49,6 +49,7 @@ export default function Site() {
                   href="https://drive.google.com/file/d/1YTiSsuuwVdDtIK5_sG7vqDwzmuSZzYKY/view?usp=drive_link"
                   className="linktoresume"
                   download={true}
+                  target="_blank"
                 >
                   <button className="resume">
                     Resume
@@ -139,93 +140,11 @@ export default function Site() {
               latest trends in technology, or just want to say hello, I'm always
               eager to connect with like-minded individuals.
             </div>
-            <div className="lets-connect-form">
-              {/* <form
-                action="https://formspree.io/f/xwkgkeyn"
-                method="post"
-                className="lets-connect"
-              >
-                <div className="name-div">
-                  <label htmlFor="name" className="label">
-                    Name:
-                  </label>
-                  <input
-                    type="text"
-                    name=""
-                    id="name"
-                    className="name"
-                    placeholder="Enter your name"
-                    autoComplete="off"
-                  />
-                </div>
-                <div className="email-div">
-                  <label htmlFor="email" className="label">
-                    Email:
-                  </label>
-                  <input
-                    type="email"
-                    name=""
-                    id="email"
-                    className="email"
-                    placeholder="Enter your email address"
-                    autoComplete="off"
-                  />
-                </div>
-               
-                  <button type="submit" className="connect">
-                    Connect!
-                  </button>
-                </div>
-              </form> */}
-              {/* <form onSubmit={handleSubmit}>
-                <div className="name-div">
-                  <label htmlFor="name" className="label">
-                    Name:
-                  </label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    className="name"
-                    placeholder="Enter your name"
-                    autoComplete="off"
-                  />
-                </div>
-
-                <ValidationError
-                  prefix="name"
-                  field="name"
-                  errors={state.errors}
-                />
-                <div className="email-div">
-                  <label htmlFor="email" className="label">
-                    Email
-                  </label>
-                  <input
-                    id="email"
-                    type="email"
-                    name="email"
-                    className="email"
-                    placeholder="Enter your email address"
-                    autoComplete="off"
-                  />
-                  <ValidationError
-                    prefix="Email"
-                    field="email"
-                    errors={state.errors}
-                  />
-                </div>
-                <div className="btn">
-                  <button
-                    type="submit"
-                    className="connect"
-                    disabled={state.submitting}
-                  >
-                    Submit
-                  </button>
-                </div>
-              </form> */}
-              {/* <Form></Form> */}
+            <div
+              className="lets-connect-form"
+              style={{ display: "flex", justifyContent: "center" }}
+            >
+              <button className="contact-btn">Contact US!</button>
             </div>
           </div>
         </div>
