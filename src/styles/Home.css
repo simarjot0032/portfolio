@@ -220,6 +220,9 @@ body {
   width: 95%;
   max-width: 500px;
 }
+.contact-me-heading {
+  font-family: var(--selffont);
+}
 .lets-connect-header {
   font-family: var(--otherfont);
   font-size: 2rem;

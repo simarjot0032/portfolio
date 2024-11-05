@@ -24,5 +24,13 @@
 
 .maindiv {
   background-color: rgb(38, 38, 38);
-  /* min-height: 100vh; */
+}
+.cursor-animation {
+  width: 25px;
+  height: 25px;
+  border: 2px solid var(--primarycolor);
+  border-radius: 50%;
+  z-index: 9999;
+  pointer-events: none;
+  transition: all 0.2s linear;
 }

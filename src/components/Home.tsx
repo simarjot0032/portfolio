@@ -102,6 +102,9 @@ export default function Site() {
                     <FaInstagram size={42} className="instagram-icon" />
                   </a>
                 </div>
+                <h5 className="contact-me-heading">
+                  Mail Me - simarjot0032@gmail.com
+                </h5>
               </div>
               <div className="intro-container-text">
                 Hey Hello{" "}
@@ -147,7 +150,11 @@ export default function Site() {
               <button className="contact-btn">Contact US!</button>
             </div>
           </div>
+          <h2 className="contact-me-heading">
+            Mail Me - simarjot0032@gmail.com
+          </h2>
         </div>
+
         <div className="footer-section">
           <Footer />
         </div>

@@ -44,7 +44,7 @@ export default function Contact() {
             </a>
           </div>
         </div>
-
+        <h2 className="contact-me-heading">Mail Me - simarjot0032@gmail.com</h2>
         <div className="lets-connect" style={{ padding: "0", margin: "0" }}>
           <Form />
         </div>

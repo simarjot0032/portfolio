@@ -9,6 +9,7 @@ export const BeginnerProjectData = [
   },
   {
     image: "",
-    heading: "",
+    heading: "Simple To Do List",
+    tags:["Html","CSS","JS"]
   },
 ];

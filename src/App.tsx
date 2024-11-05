@@ -3,7 +3,7 @@ import UnderCons from "./components/UnderCons";
 
 import Home from "./components/Home";
 import Preload from "./components/Preload";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Skills from "./components/Skills";
 import Project from "./components/Project";
 // import Cursor from "./components/Cursor";
@@ -11,9 +11,14 @@ import Contact from "./components/Contact";
 import Blog from "./components/Blog";
 import Whatweb from "./components/Blogrender/Whatweb";
 // import Whatiswebdeb from "./components/Blogrender/Whatweb";
+type Cordinates = {
+  x: number;
+  y: number;
+};
 function App() {
   const [showpreload, setpreload] = useState(true);
   const [showhome, sethome] = useState(false);
+  const [cordinates, setcordinates] = useState<Cordinates>({ x: 0, y: 0 });
   setTimeout(() => {
     setpreload(false);
     sethome(true);
@@ -24,13 +29,28 @@ function App() {
       element: <Whatweb />,
     },
   ];
+  const handleMouseMove = (e: any) => {
+    setcordinates({ x: e.pageX, y: e.pageY });
+  };
+  // window.addEventListener("scroll", () => {
+  //   let newY = window.scrollY;
+  //   setcordinates({ ...cordinates, y: newY });
+  // });
+  // console.log(cordinates);
   return (
     <>
-      {/* <Cursor></Cursor> */}
       <HashRouter>
-        <div style={{ backgroundColor: "black" }}>
+        <div style={{ backgroundColor: "black" }} onMouseMove={handleMouseMove}>
+          <div
+            className="cursor-animation"
+            style={{
+              position: "absolute",
+              inset: "0",
+              top: `${cordinates?.y}px`,
+              left: `${cordinates?.x}px`,
+            }}
+          ></div>
           {showpreload && <Preload></Preload>}
-          {/* <Navbar></Navbar> */}
           {showhome && (
             <Routes>
               <Route path="" element={<Home />}></Route>
