@@ -32,11 +32,7 @@ function App() {
   const handleMouseMove = (e: any) => {
     setcordinates({ x: e.pageX, y: e.pageY });
   };
-  // window.addEventListener("scroll", () => {
-  //   let newY = window.scrollY;
-  //   setcordinates({ ...cordinates, y: newY });
-  // });
-  // console.log(cordinates);
+
   return (
     <>
       <HashRouter>
