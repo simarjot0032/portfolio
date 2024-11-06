@@ -1,16 +1,12 @@
 import { Route, Router, HashRouter, Routes } from "react-router-dom";
-import UnderCons from "./components/UnderCons";
-
 import Home from "./components/Home";
 import Preload from "./components/Preload";
 import { useRef, useState } from "react";
 import Skills from "./components/Skills";
 import Project from "./components/Project";
-// import Cursor from "./components/Cursor";
 import Contact from "./components/Contact";
 import Blog from "./components/Blog";
 import Whatweb from "./components/Blogrender/Whatweb";
-// import Whatiswebdeb from "./components/Blogrender/Whatweb";
 type Cordinates = {
   x: number;
   y: number;
@@ -54,9 +50,6 @@ function App() {
               <Route path="/Project" element={<Project />}></Route>
               <Route path="/Contact" element={<Contact />}></Route>
               <Route path="/Blog" element={<Blog />}></Route>
-              {routes.map((route): any => {
-                return <Route path={route.path} element={route.element} />;
-              })}
             </Routes>
           )}
         </div>
