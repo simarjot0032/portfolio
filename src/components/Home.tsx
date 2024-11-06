@@ -147,7 +147,9 @@ export default function Site() {
               className="lets-connect-form"
               style={{ display: "flex", justifyContent: "center" }}
             >
-              <button className="contact-btn">Contact US!</button>
+              <a href="https://drive.google.com/drive/folders/1QqMUyhAtJl4XjAhkoNNpVhQz1_hlkNXP">
+                <button className="contact-btn">Contact US!</button>
+              </a>
             </div>
           </div>
           <h2 className="contact-me-heading">
